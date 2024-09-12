@@ -1,0 +1,209 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Outfit", "Poppins";
+}
+
+html,
+body {
+    height: 100vh;
+}
+body {
+    padding: 40px;
+    background: linear-gradient(151.64deg, rgba(36, 219, 131, 0.7) 7.04%, #0075C9 91.66%);
+    background-repeat: no-repeat;
+}
+.navbar {
+    width: 1300px;
+    height: 50px;
+    left: 95px;
+    padding-right: 40px;
+    padding-left: 40px;
+    gap: 0px;
+    border-radius: 29.05px ;
+    opacity: 0px;
+    background: #DBDBDB66;
+    position: sticky;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color:white;
+    text-decoration: none;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+.options{
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+}
+#links{
+    display:flex;
+    gap: 20px;
+}
+
+.intro{
+    padding: 25px;
+    .in-intro {
+        color: white;
+        height: max-content;
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+        justify-content: space-evenly;
+        }
+        div{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 10px;
+            h1 {
+                font-size: 1fr;
+                width: 85%;
+                height: min-content;
+                .intext{
+                    font-weight: 200;
+                }
+            
+        }
+        video {
+            margin: 20px;
+            width: 70%;
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.656);
+            border-radius: 16px;
+        }
+        img {
+            width: 35px;
+        }
+        }
+    
+    .contribute {
+        display: block;
+        margin-inline: 4.5%;
+        background-color: rgba(0, 0, 0, 0.366);
+        padding: 10px;
+        padding-inline: 25px;
+        border: solid 1px rgba(255, 255, 255, 0.234);
+        border-radius: 16px;
+        width: 700px;
+        p {
+            font-weight: 300;
+        }
+        .contribute-button {
+            background-color: transparent;
+            color: white;
+            padding: 10px;
+            MARGIN-bottom: 15PX;
+            border: solid 0.5px rgba(255, 255, 255, 0.478);
+            border-radius: 7px;
+        }
+    }
+    .scrolldown {
+        margin : 40px;
+        font-size: 10px;
+        transition: all 0.2s;
+    }
+    @media (max-width: 850px) {
+
+        .in-intro {
+            margin: 0;
+            flex-direction: column;
+            h1 {
+                font-size: 22px;;
+            }
+            video {
+                margin: 20px;
+                width: 350px;
+            }
+            img {
+                width: 27px;
+            }
+        }
+        .contribute {
+            font-size: 11px;
+            width: auto;
+        }
+        .contribute-button{
+            font-size: 9px;
+        }
+        .scrolldown{
+            margin: 10px;
+            font-size: 10px;
+        }
+    }
+    .scrolldown:hover {
+        color: #0075C9;
+        text-shadow: 0px 0px 20px #0075C9;
+        transition: all 0.2s;
+    }
+    .contribute-button:hover {
+        background-color: rgba(255, 255, 255, 0.093);
+        color: white;
+        cursor: pointer;
+    }
+}
+#kliwa1 {
+    width: 160px;
+    height: 160px;
+    background-image: url("./assets/9liwa.png");
+    background-position: left bottom; /* Positions the image */
+    background-repeat: no-repeat; /* Prevents the background from repeating */
+    background-size: cover; /* Controls how the image fits inside the div */
+    position: absolute;
+    z-index: -99;
+    bottom: 80px; /* Set the distance from the top of the nearest positioned ancestor */
+    left: 50px; /* Set the distance from the left */
+    transition: 1s;
+    overflow: hidden;
+}
+#kliwa1.active {
+    bottom: 300px;
+    left: -40px;
+    transition: 1s;
+}
+#kliwa2 {
+    width: 400px;
+    height: 400px;
+    background-image: url("./assets/kliwakbirabzf.png");
+    background-position: left bottom; /* Positions the image */
+    background-repeat: no-repeat; /* Prevents the background from repeating */
+    background-size: cover; /* Controls how the image fits inside the div */
+    position: absolute;
+    z-index: -99;
+    overflow: hidden;
+    bottom: 550px; /* Set the distance from the top of the nearest positioned ancestor */
+    left: 200px; /* Set the distance from the left */
+    transition: 1s;
+    overflow: hidden;
+
+}
+#kliwa2.active {
+    bottom: 500px;
+    left: 440px;
+    transition: 1s;
+}
+#kliwa3 {
+    width: 300px;
+    height: 300px;
+    background-image: url("./assets/9lwtsi\ kbira.png");
+    background-position: left bottom; /* Positions the image */
+    background-repeat: no-repeat; /* Prevents the background from repeating */
+    background-size: cover; /* Controls how the image fits inside the div */
+    position: absolute;
+    z-index: -99;
+    overflow: hidden;
+    top: 350px; /* Set the distance from the top of the nearest positioned ancestor */
+    left: 1300px; /* Set the distance from the left */
+    transition: 1s;
+    overflow: hidden;
+
+}
+#kliwa3.active {
+    top: 500px;
+    left: 1000px;
+    transition: 1s;
+}
